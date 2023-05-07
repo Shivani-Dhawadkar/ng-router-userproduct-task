@@ -1,0 +1,24 @@
+<div class="container"><div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <div class="card">
+            <div class="card-header">
+                <h3>{{getproductObj.pname}}</h3>
+            </div>
+            <div class="card-body"><p>
+               the product is <strong> {{getproductObj.pname}} </strong> and its status is <strong>{{getproductObj.pstatus}}</strong></p>
+              <img id ='image' src="{{getproductObj.img}}" alt="">
+             
+            </div>
+            
+            <div class="card-footer">
+                <i class="fa-solid fa-share fa-rotate-180 fa-2x arrow "   routerLink="/products"></i>
+                <div class="text-right">
+                    <button class="btn btn-secondary" id="editbtn" [routerLink]="['/products',getproductObj.pid, 'edit']">Edit product</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div></div>
+
+

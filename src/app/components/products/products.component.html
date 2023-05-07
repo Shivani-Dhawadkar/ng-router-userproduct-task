@@ -1,0 +1,26 @@
+
+
+<div class="row my-4">
+    <div class="col-sm-4">
+        <ul class="list-group">
+            <li class="list-group-item" 
+            [routerLink]="['/products', product.pid]"
+            *ngFor="let product of productinfo, index as i"
+            [ngClass]="{active : slectedproductid === product.pid}">
+                {{product.pname}}
+        </li>
+    </ul>
+    <button class="btn btn-secondary my-4" routerLink="/users">
+        Go to users
+    </button>
+    
+   
+    
+    <button class="btn btn-secondary my-4 float-right" routerLink="/">
+        Go back
+    </button>
+    </div>
+    <div class="col-sm-8">
+        <!-- <app-product></app-product> -->
+    </div>
+</div>

@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="pname">Product Name</label>
+                <input type="text" name="" #pname id="pname" class="form-control"  value={{selectedUser.prodName}}>
+            </div>
+            <div class="form-group">
+                <select name="" id="" #pstatus class="form-control" value={{selectedUser.prodStatus}}>
+                    <option value="Inprogress">inprogress</option>
+                    <option value="Inprogress">dispatched</option>
+                    <option value="Inprogress">Ready to Dispatch</option>
+                </select>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-secondary" (click)="onProdUpdate(pname, pstatus)">update</button>
+            </div>
+        </div>
+    </div>
+</div>

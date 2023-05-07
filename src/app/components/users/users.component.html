@@ -1,0 +1,27 @@
+<div class="row my-4" >
+    <div class="col-sm-4">
+        <ul class="list-group">
+            <li class="list-group-item" 
+            [routerLink]="['/users', user.id]"
+            [ngClass]="{active : selectedUserId === user.id}"
+            *ngFor="let user of userInfo">
+                {{user.userName}}</li>
+           
+        </ul>
+        <button class="btn btn-secondary my-4" routerLink="/products">
+            Go to products
+        </button>
+        
+        
+        
+        <button class="btn btn-secondary my-4 float-right" routerLink="/">
+            Go back
+        </button>
+    </div>
+    <div class="col-sm-8">
+        <!-- <app-user></app-user> -->
+    </div>
+    
+</div>
+
+

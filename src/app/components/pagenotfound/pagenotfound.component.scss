@@ -1,0 +1,27 @@
+.notfound:hover{
+ color: red;
+}
+.pagenotfound:hover{
+    scale:2;
+    color: red;
+   }
+
+.notfound{
+    margin-top: 175px;
+    display: flex;
+    justify-content: center;
+}
+.pagenotfound{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: black;
+    scale: 1.2;
+}

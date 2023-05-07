@@ -1,0 +1,20 @@
+  
+  <div class="card">
+    <div class="card-header">
+        <h3 ><a [routerLink]= "['/users', userid]">{{userobject.userName}}</a></h3>
+    </div>
+    <div class="card-body">
+        <p>
+            User <strong> {{userobject.userName}}</strong> have ordered <strong>{{userobject.prodName}}</strong>
+            and the status of product is <strong>{{userobject.prodStatus}}</strong>
+        </p>
+    </div>
+    <div class="card-footer">
+        <i class="fa-solid fa-share fa-rotate-180 fa-2x arrow "  routerLink="/users"></i>
+        <div class="text-right">
+            <button class="btn btn-secondary" id="editbtn" [routerLink]="['/products',userobject.id, 'edit']">Edit user</button>
+        </div>
+        
+    </div>
+</div>
+        

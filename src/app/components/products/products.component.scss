@@ -1,0 +1,11 @@
+li {
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(124, 118, 118);
+    border: solid 2px black;
+}
+.btn:hover{
+    background-color: black;
+    scale: 1.2;
+}
